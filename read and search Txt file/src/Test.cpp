@@ -1,10 +1,8 @@
 /**
 * @file.......: Test.cpp
 * @description: Programýn test edildigi dosya
-* @course.....: 2.Ogretim B grubu
-* @assignment.: 03 Numaralý Odev
 * @date.......: 24/11/2017
-* @author.....: Aytekin Erlale/Oðuzhan Alipek --- aytekin.erlale@Ogr.Sakarya.edu.tr / oguzhan.alipek@Ogr.Sakarya.edu.tr
+* @author.....: Aytekin Erlale
 */
 
 
@@ -14,8 +12,8 @@
 #include <iostream>
 #include <string>
 
-int main()
-{
+int main() {
+	system("cls");
 	int secim;
 	std::string aranan_kelime;
 	Islem * islem = new Islem();
@@ -25,12 +23,11 @@ int main()
 	if (!islem->hataKontrol()) //verilen yol hatali ise bir sonraki islemlerin yapilmayacak
 		return 0;
 	islem->DosyalariBulEkle(); //istenilen yoldaki txtler agaca atanacak agaclar listeye atanacak
-	
-	do
-	{
+
+	do {
 
 
- 		system("cls");
+		system("cls");
 
 		std::cout << "1-Arama Yap\n";
 		std::cout << "2-Listele\n";
@@ -38,32 +35,30 @@ int main()
 		std::cout << ">>>";
 		std::cin >> secim;
 
-		switch (secim)
-		{
-		case 1: {
-			//arama yapýlacak;
-			std::cout << "\naranacak kelime..:";
-			std::cin >> aranan_kelime;
-			 list->Bul(aranan_kelime);
-			system("pause");
-			
-			break;
-		}
-		case 2: {
-			//listeleme yapýlacak
+		switch (secim) {
+			case 1: {
+				//arama yapýlacak;
+				std::cout << "\naranacak kelime..:";
+				std::cin >> aranan_kelime;
+				list->Bul(aranan_kelime);
+				system("pause");
 
-			list->dolas();
-			break;
-			system("pause");
-			
-		}
-				
-		default:
-		{
-			system("pause");
-			break;
-		}
-			
+				break;
+			}
+			case 2: {
+				//listeleme yapýlacak
+
+				list->dolas();
+				break;
+				system("pause");
+
+			}
+
+			default: {
+				system("pause");
+				break;
+			}
+
 		}
 
 		system("pause");

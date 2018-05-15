@@ -1,10 +1,8 @@
 /**
 * @file.......: Islem.cpp
 * @description: Islem sýnýfýnýn degiskenleri uzerinde islem yapýldýgý.methodlarýn govdelerinin yazýldýgý dosya
-* @course.....: 2.Ogretim B grubu
-* @assignment.: 03 Numaralý Odev
 * @date.......: 24/11/2017
-* @author.....: Aytekin Erlale/Oðuzhan Alipek --- aytekin.erlale@Ogr.Sakarya.edu.tr / oguzhan.alipek@Ogr.Sakarya.edu.tr
+* @author.....: Aytekin Erlale
 */
 
 
