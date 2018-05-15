@@ -102,13 +102,13 @@ Liste * li = root;
 void Liste::dolas()
 {
 		li = li->next;
-		std::cout << "\n" << li->dosya_adi << ":\n";
+		std::cout << "\n\n" << li->dosya_adi << ":\n\n";
 		dugumdeki_agac->dolas(li->dugumdeki_agac);
 
 		if (li->next != NULL)
 			return dolas();
 
-		std::cout << "\n";
+		std::cout << "\n\n";
 		li = root;
 	
 }
@@ -124,7 +124,7 @@ void Liste::Bul(std::string aranan)
 		if (dugumdeki_agac->Varmi(lis->dugumdeki_agac, aranan))
 		{		
 			sayac = 1;
-			std::cout << "aranan kelime " << lis->dosya_adi << " icerisinde.\n";
+			std::cout << "aranan kelime " << lis->dosya_adi << " icerisinde.\n\n";
 		}
 		else {
 			if (lis->next != NULL)
@@ -132,7 +132,7 @@ void Liste::Bul(std::string aranan)
 				return Bul(aranan);
 			}
 			else if(lis->next == NULL && sayac == 0)
-				std::cout<<"aranan kelime bu dizinde bulunamadi\n";
+				std::cout<<"aranan kelime bu dizinde bulunamadi\n\n";
 		}
 	}
 	lis = root;
